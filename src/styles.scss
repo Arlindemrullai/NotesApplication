@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+button {
+    &.primary {
+        @apply py-2 px-8 rounded-lg font-semibold text-white bg-green-900;
+        @apply hover:bg-green-600 transition
+    }
+
+    &.secondary {
+        @apply py-2 px-8 rounded-lg font-semibold text-white bg-yellow-200;
+        @apply hover:bg-yellow-200 transition;
+    }
+    &.danger {
+        @apply py-2 px-8 rounded-lg font-semibold text-white bg-red-500 hover:bg-red-900;
+        
+    }
+
+}
+
+.card {
+    @apply rounded-lg shadow bg-white p-4 mb-4 border hover:bg-slate-50 transition duration-500;
+}
+
+.wrapper {
+    @apply p-4 md:p-8 mx-auto max-w-[35rem];
+
+}
+
+input,
+textarea {
+    @apply border min-h-10 rounded-lg shadow w-full mb-8;
+    @apply hover:border-slate-400 focus:bg-slate-100
+}
+
+label {
+    @apply font-medium mb-1
+}

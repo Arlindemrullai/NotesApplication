@@ -1,0 +1,12 @@
+<main class="wrapper">
+    <div class="max-h-96 overflow-auto">
+        @for (note of allNotes; track note; let i = $index ) {
+        <app-dashbord-card [note]="note" [i]="i"></app-dashbord-card>
+        }
+    </div>
+            <button class="primary" [routerLink]="['/new-note']">+New note</button>
+</main>
+
+<!-- "rounded-lg shadow bg-white p-4 mb-4 border hover:bg-slate-50 transition duration-500"> -->
+
+<!-- "p-4 md:p-8 mx-auto max-w-[35rem]" -->
